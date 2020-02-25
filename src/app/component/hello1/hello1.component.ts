@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hello',
-  template: '<div>HelloComponent<br/><button (click)="click()">hello1</button></div>'
+  template: '<div>Hello1Component<br/><button (click)="click()">back1</button></div>'
 })
-export class HelloComponent {
+export class Hello1Component {
   constructor(private router: Router) {}
   click() {
-    this.router.navigate(['/hello1']);
+    this.router.navigate(['/']);
   }
 }
